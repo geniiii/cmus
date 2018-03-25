@@ -9,7 +9,7 @@ Copyright © 2004-2008 Timo Hirvonen <tihirvon@gmail.com>
 
 Copyright © 2008-2017 Various Authors
 
-fork with some ugly code in mpris.c to add file path to metadata
+fork with some ugly code in mpris.c to add stuff to metadata
 
 
 Configuration
