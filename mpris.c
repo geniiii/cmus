@@ -407,6 +407,9 @@ static int mpris_metadata(sd_bus *_bus, const char *_path,
 		else // ugly, should've used xesam:url but i'm too lazy
 			CK(mpris_msg_append_ss_dict(reply, "cmus:file_path",
 						ti->filename));
+		if (ti->bitrate != -1) // is there any case where this doesn't exist?
+			CK(mpris_msg_append_si_dict(reply, "cmus:bitrate",
+						ti->bitrate));
 	}
 
 	CK(sd_bus_message_close_container(reply));
